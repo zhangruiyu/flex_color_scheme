@@ -385,6 +385,7 @@ class FlexAdaptive with Diagnosticable {
     if (isWebOverride ?? overrideIsWeb ?? kIsWeb) {
       switch (platformOverride ?? defaultTargetPlatform) {
         case TargetPlatform.android:
+        case TargetPlatform.ohos:
           return androidWeb;
         case TargetPlatform.fuchsia:
           return fuchsiaWeb;
@@ -400,6 +401,7 @@ class FlexAdaptive with Diagnosticable {
     } else {
       switch (platformOverride ?? defaultTargetPlatform) {
         case TargetPlatform.android:
+        case TargetPlatform.ohos:
           return android;
         case TargetPlatform.fuchsia:
           return fuchsia;
